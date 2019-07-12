@@ -2,7 +2,7 @@
 import rnn_easy
 txt = rnn_easy.display(txt_file_name="mecab2019-07-12-02.txt", rnn_file_name="Rnn2019-07-12-02.pkl")
 
-import json, config # 標準のjsonモジュールとconfig.pyの読み込み
+import json # 標準のjsonモジュールとconfig.pyの読み込み
 from requests_oauthlib import OAuth1Session # OAuthのライブラリの読み込み
 import time
 import os
