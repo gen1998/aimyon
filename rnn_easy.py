@@ -39,7 +39,7 @@ def display(txt_file_name=None,rnn_file_name=None):
     start_id = word_to_id[start_word]
     word_ids = [start_id]
     xs=start_id
-    while(len(word_ids)<100):
+    while(len(word_ids)<30):
         xs = np.array(xs).reshape(1, 1)
         for layer in layers:
             xs = layer.forward(xs)
