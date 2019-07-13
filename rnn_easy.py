@@ -50,5 +50,9 @@ def display(txt_file_name=None,rnn_file_name=None):
         word_ids.append(int(xs))
         
     txt = ''.join([id_to_word[i] for i in word_ids])    
+
+    txt = txt[:140]
+    onumber = txt.rfind('。')
+    txt = txt[:onumber+1]
         
     return txt
