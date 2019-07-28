@@ -9,3 +9,4 @@ requests-oauthlib==0.8.0
 urllib3==1.21.1
 numpy==1.15.1
 matplotlib==2.2.3
+tweepy==3.8.0
