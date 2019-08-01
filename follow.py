@@ -9,7 +9,7 @@ auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 
 api = tweepy.API(auth, wait_on_rate_limit=True)
-followers_ids = tweepy.Cursor(api.followers_ids, id='eren_word_maker', cursor=-1).items()
+followers_ids = tweepy.Cursor(api.followers_ids, id='AI_myon_myon', cursor=-1).items()
 for follower_id in followers_ids:
     try:
         user = api.get_user(follower_id)
